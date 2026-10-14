@@ -1,15 +1,11 @@
 ﻿{
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "services": {
-    "app": {
-      "root": ".",
-      "runtime": "container",
-      "env": {
-        "NODE_ENV": "production",
-        "PORT": "3001",
-        "FREEAPI_DB_PATH": "/app/server/data/freeapi.db",
-        "FREEAPI_DB_BACKUP_PATH": "/app/server/data/backups"
-      }
-    }
+  "buildCommand": "docker build -t freellmapi .",
+  "outputDirectory": "dist",
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "3001",
+    "FREEAPI_DB_PATH": "/app/server/data/freeapi.db",
+    "FREEAPI_DB_BACKUP_PATH": "/app/server/data/backups"
   }
 }
