@@ -3,7 +3,11 @@
   "services": {
     "app": {
       "root": ".",
-      "runtime": "container"
+      "runtime": "container",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": "3001"
+      }
     }
   }
 }
