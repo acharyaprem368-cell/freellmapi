@@ -26,3 +26,10 @@
 - Free tier containers sleep after inactivity
 - First request may be slow cold start
 - Backup DB via /api/backups regularly
+
+## Post-Deploy Smoke Test
+1. Open https://your-project.vercel.app/
+2. Verify UI loads and shows FreeLLMAPI header
+3. Visit https://your-project.vercel.app/api/ping → should return {"status":"ok"}
+4. Visit https://your-project.vercel.app/keys → should show Keys page
+5. Check logs in Vercel dashboard for "Database initialized at /app/server/data/freeapi.db"
