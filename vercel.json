@@ -6,7 +6,8 @@
       "runtime": "container",
       "env": {
         "NODE_ENV": "production",
-        "PORT": "3001"
+        "PORT": "3001",
+        "FREEAPI_DB_PATH": "/app/server/data/freeapi.db"
       }
     }
   }
